@@ -1,0 +1,10 @@
+<div class="container">
+<p>welcome {{name}}</p>
+You can manage your tood's <a routerLink="/todos">here</a>
+<!-- <button (click)="getWelcomeMessage()" class="btn btn-success">Click here to get a customized welcome message</button> -->
+<button (click)="getWelcomeMessageWithPathVariable()" class="btn btn-success">Click here to get a customized welcome message</button>
+
+</div>
+<div class="container" *ngIf="welcomeMessageFromService">
+    <h2>Your customized welcome message {{welcomeMessageFromService}}</h2>
+</div>

@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "todo-frontend": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "uk": "src/locale/messages.uk.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +19,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": ["uk"],
             "outputPath": "dist/todo-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -32,9 +39,7 @@
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "ssr": false
           },
           "configurations": {
             "production": {
@@ -94,8 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "e2e": {
+          "builder": "@puppeteer/ng-schematics:puppeteer",
+          "options": {
+            "devServerTarget": "todo-frontend:serve",
+            "testRunner": "jasmine"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "todo-frontend:serve:production"
+            }
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e6c11b28-5b3b-4c41-b8f9-3b4729b1d6cf"
   }
 }

@@ -1,0 +1,77 @@
+<header>
+  <div class="bg-dark collapse" id="navbarHeader" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 i18n class="text-white">about</h4>
+          <p i18n class="text-muted">about2</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 i18n class="text-white">contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Twitter</a></li>
+            <li><a href="#" class="text-white">Facebook</a></li>
+            <li><a href="#" class="text-white">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 i18n class="text-white">Limitations</h4>
+          <p i18n class="text-muted">Free version of the application has certain limitations:</p>
+          <ol class="list-group list-group-numbered">
+            <li i18n class="list-group-item list-group-item-dark">Within 12 hours you have the opportunity to cluster a limited number of articles, you can receive articles from domains 50 times regardless of the number of articles per 1 domain, the number of requests to domains is added up from each of your requests, when their number is more than 50, you will have the opportunity perform the next request in 12 hours.</li>
+            <li i18n class="list-group-item list-group-item-dark">Only domains from the list are available.</li>
+            <li i18n class="list-group-item list-group-item-dark">Links may not be working.</li>
+            <li i18n class="list-group-item list-group-item-dark">Clustering is performed on the basis of texts obtained by parsing web pages, so the content used may be partially complete/accurate, this may have some influence on the clustering results.</li>
+            <li i18n class="list-group-item list-group-item-dark">You have access to articles published not earlier than a month ago from today's date, note that articles from previously received results remain available.</li>
+          </ol>
+          <p i18n class="text-muted mt-2">Pro version is coming soon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark box-shadow">
+    <div class="container d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
+        <img src="/img/cluster.png" width="25" height="25">
+        <a href="#" class="ms-2 navbar-brand d-flex align-items-center">
+          <strong>News articles clusterizer</strong>
+        </a>
+      </div>
+      <div class="col-4 container d-flex justify-content-between btn-block">
+        <div class="col-2">
+           <a i18n href="/history" class="btn btn-secondary btn-md btn-header">History</a>
+          <ul>
+          <li><a *ngIf="hardcodedauthenticationSevise.isUserLoggedIn()" routerLink="/welcome/in28min" class="nav-link">Home</a></li>
+          <li><a *ngIf="hardcodedauthenticationSevise.isUserLoggedIn()" routerLink="/todos" class="nav-link">Todos</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <a i18n href="/" class="btn btn-secondary btn-md btn-header">main.page</a>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-secondary btn-md btn-header" type="button" data-toggle="collapse"
+                  data-target="#navbarHeader"
+                  aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span i18n>help</span>
+          </button>
+        </div>
+        <div class="col-2">
+          <ul>
+          <li><a *ngIf="!hardcodedauthenticationSevise.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+          <li><a *ngIf="hardcodedauthenticationSevise.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+          </ul>
+        </div>
+        <div class="btn-group col-2">
+          <button type="button" class="btn btn-secondary btn-md dropdown-toggle btn-header" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/img/world.png" width="20" height="20">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

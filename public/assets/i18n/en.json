@@ -1,0 +1,18 @@
+{
+  "TITLE": "Welcome",
+  "DESCRIPTION": "This is an English description.",
+  "LIMITATIONS": "Limitations",
+  "LIMITATION_TITLE": "Free version of the application has certain limitations:",
+  "LIMITATION_0": "Within 12 hours you have the opportunity to cluster a limited number of articles, you can receive articles from domains 50 times regardless of the number of articles per 1 domain, the number of requests to domains is added up from each of your requests, when their number is more than 50, you will have the opportunity perform the next request in 12 hours.",
+  "LIMITATION_1": "Only domains from the list are available.",
+  "LIMITATION_2": "Links may not be working.",
+  "LIMITATION_3": "Clustering is performed on the basis of texts obtained by parsing web pages, so the content used may be partially complete/accurate, this may have some influence on the clustering results.",
+  "LIMITATION_4": "You have access to articles published not earlier than a month ago from today's date, note that articles from previously received results remain available.",
+  "PRO_PROMO": "Pro version is coming soon",
+  "HISTORY": "History",
+  "HELP": "Help",
+  "LOGOUT": "Logout",
+  "LOGIN": "Login",
+  "CONTACT": "Contact",
+  "MAIN_PAGE": "Main"
+}
